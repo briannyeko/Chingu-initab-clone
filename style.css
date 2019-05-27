@@ -1,0 +1,508 @@
+
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+
+  background-color: #282a36;
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 150px 3fr 5fr 3fr;
+	background-color: #282a36!important;
+	width: 100vw;
+	height: 100vh;
+}
+
+.grid-container > div {
+	padding: 15px;
+}
+
+
+p .SETTING, .GISTS, .STCKOVERFLOW, .TRENDING,
+.SCRATCHPAD, .PLAYGROUND, .HELPINFO {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.reddit {
+
+}
+
+}
+/*Navbar*/
+.sidebar {
+  grid-column-start: 1;
+  	grid-column-end: 2;
+  	grid-row-start: 1;
+  	grid-row-end: 6;
+        flex-direction: column;
+  	background-color: #44475a!important;
+  }
+
+
+
+#Navigation button {
+  border: none;
+
+}
+
+#Navigation  i {
+  border-radius: 50%;
+  color: white;
+  display: flex;
+   width: 25px;
+   height: 25px;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+
+
+/*Navigation Bar*/
+
+#Navigation
+{
+  display: flex;
+
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 50%;
+      font-size: 75%;
+      padding-top: 30px;
+
+  }
+
+#Navigation button {
+  border: none;
+  font-weight: 900;
+    border-radius: 5px;
+    color: black;
+    margin-right: 5px;
+}
+
+.fa-pencil-alt {
+  color: black;
+}
+
+#Navigation a {
+      flex-direction: column;
+      margin-right: 5px;
+}
+
+#SETTINGS {
+  background-color: #8be9fd;
+  border-radius: 3px;
+
+
+}
+
+.SETTINGS a {
+
+  color:#8be9fd;
+}
+
+ #GISTS {
+  background-color: #50fa7b;
+color:#50fa7b;
+}
+
+.GISTS a {
+  color:#50fa7b;
+}
+ #STCKOVERFLOW {
+  background-color: #ffb86c;
+color:#ffb86c;
+}
+
+.STCKOVERFLOW a {
+color:#ffb86c;
+
+}
+
+ #TRENDING {
+  background-color: #ff79c6;
+color:#ff79c6;
+}
+
+.TRENDING a {
+
+  color:#ff79c6;
+}
+
+ #SCRATCHPAD {
+  background-color: #bd93f9;
+  color:#bd93f9;
+  mar
+}
+
+.SCRATCHPAD a {
+color:#bd93f9;
+}
+
+ #PLAYGROUND {
+  background-color: #f8f8f2;
+  color:#f8f8f2;
+}
+
+.PLAYGROUND a {
+  color:#f8f8f2;
+
+}
+
+ #HELPINFO {
+  background-color: #f1fa8c;
+  color: #f1fa8c;
+}
+
+.HELPINFO a {
+color: #f1fa8c;
+
+}
+
+/*logo and SocialMedia*/
+
+#SocMediaLogo
+
+{
+  justify-content: flex-end;
+    height: -10px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#Socialmedia {
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+}
+
+#Socialmedia i {
+border-radius: 50%;
+background-color: white;
+display: flex;
+width: 25px;
+height: 25px;
+justify-content: center;
+align-items: center;
+
+}
+
+/* Popular on R/JAVASCRIPT, Relvant JS history and Github issues history Tittle */
+.initabTitle {
+  color: #8be9fd;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85em;
+
+}
+
+.initabTitle i {
+margin-left: 10px;
+padding-top: 10px;
+}
+
+.initabTitle > i {
+margin: 5px;
+
+}
+
+
+
+
+/*Reddit NewsFeed (Popular on R/Javascript) */
+
+.Reddit {
+  grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 6;
+	overflow: auto;
+	max-height: 100vh;
+	display: block;
+}
+
+
+.Scores {
+  color: #535877;
+}
+.News {
+height: 30em;
+overflow: scroll;
+overflow-x: hidden;
+width: 333.6px;
+font-size: 0.80em;
+
+}
+
+
+.Newstext {
+color: white;
+font-size: 1em;
+
+}
+.Sponsored {
+color: #ff79c6;
+}
+
+.Sponsored a {
+ color: #f1fa8c;
+}
+
+.Posted  {
+color: #8be9fd;
+}
+
+.NewsRedditz {
+color:  #f1fa8c;
+}
+
+
+
+/*Relevant Javascript History*/
+.JShistory {
+  grid-column-start: 3;
+  	grid-column-end: 4;
+  	grid-row-start: 1;
+  	grid-row-end: 3;
+    overflow: scroll;
+    overflow-x: hidden;
+  	max-height: 40vh;
+  	display: block;
+  	border-bottom: 1px solid #44475a;
+}
+
+.button-main {
+    background-color: white;
+    border: none;
+    color: lightblue;
+}
+
+#history {
+  height: 20vh;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  border-bottom: 2px solid #44475a;
+}
+
+
+#history .JSdayfeed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.js-history {
+  font-size: 0.85em;
+  padding-bottom: 1.6em;
+  padding-left: 0.8em;
+}
+.js-history a {
+  color: #6272a4;
+}
+
+.dayfeed {
+  color: #858794;
+  font-size: 0.75em;
+
+}
+
+/*Time and Date*/
+.times {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 6;
+  margin-bottom: 110px;
+  margin-top: -120px;
+}
+
+.clock {
+	color: #6272A4;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.hour-minute {
+	font-size: 120px;
+	letter-spacing: -1px;
+	font-family: sans-serif!important;
+}
+
+.amPm {
+	font-size: 30px;
+	font-family: sans-serif!important;
+
+}
+
+.date > span {
+	font-size: 20px;
+  font-weight: lighter;
+	font-family: sans-serif!important;
+}
+
+.NotDisplay {
+	display: block;
+  margin-top: 20px;
+	text-align: center;
+	font-family: sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+	color: #6272A4;
+}
+
+.NotDisplay:hover {
+	cursor: pointer;
+}
+
+.NotDisplay .fa-question-circle {
+	color: #ffb86c;
+	margin-right: 5px;
+}
+
+.NotDisplay-btn {
+	color: #ffb86c;
+	font-size: 14px;
+}
+
+.NotDisplay-btn .fa-times-circle {
+	margin-right: 5px;
+}
+
+/*Github Issues  */
+
+
+#github-content {
+  display: flex column;
+  max-width: 300px;
+  overflow: hidden;
+
+}
+#github-content .github-header h4 {
+  padding-bottom: 0.2em;
+}
+#github-content .github-header a {
+  font-size: 0.75em;
+}
+.switch-gitlab {
+  height: 14vh;
+  margin: -0.9em;
+  padding-left: 8em;
+  padding-right: 1em;
+  color: #535877;
+}
+
+/* Github ISSUES AND Pull Requests */
+
+#tabs {
+  display: flex;
+  justify-content: center;
+  word-spacing: -5px;
+  transform: translateY(-10%);
+}
+#issues, #pullrequests {
+  font-size: 0.8em;
+}
+#issues {
+  color: #f1fa8c;
+}
+#pullrequests {
+  padding-left: 20px;
+  color: #ff79c6;
+}
+.toggle-button {
+  display: flex column;
+}
+.toggle-button p {
+  text-align: center;
+  transform: translateY(-50%);
+}
+#issues-tabs {
+  color: #f1fa8c;
+}
+#pull-requests-tabs {
+  color: #ff79c6;
+  visibility: hidden;
+}
+
+/* Github issues history feed */
+
+.github-menubar {
+  border-bottom: 1px solid #44475a;
+  height: 327px;
+  margin-top: 0.3em;
+  margin-left: 0.81em;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.github-menubar .github-issue {
+  margin: 0.8em;
+  margin-bottom: 3.2em;
+  padding-left: 0.8em;
+  color: #f8f8f2;
+  border-left: 3px solid #44475a;
+  font-size: 0.735em;
+}
+.github-menubar .github-pull-requests {
+  display: none;
+  margin: 0.8em;
+  margin-bottom: 3.2em;
+  padding-left: 0.8em;
+  color: #a1a160;
+  border-left: 3px solid #44475a;
+  font-size: 0.735em;
+}
+
+.issue-notes {
+  padding: 0.43em;
+  color: 	#f1fa8c;
+}
+
+
+.pull-requests-notes {
+  padding: 0.43em;
+  color: #ff79c6;
+}
+
+
+
+.repo {
+  color: #6272a4;
+}
+
+
+
+/* Advertisements */
+.Advertisements {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	border-left: 4px solid #44475a;
+	margin: 30px;
+	display: flex;
+	flex-flow: left;
+	height: 100px;
+}
