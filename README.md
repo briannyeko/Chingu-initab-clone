@@ -1,4 +1,4 @@
-![logo](https://user-images.githubusercontent.com/29721784/52025031-c6891b00-24b7-11e9-8cac-4fa4d1dfd10d.png)
+![logo](http://initab.com/assets/images/initab-promo-920x680.png)
 
 # simple-boilerplate
 Simple Boilerplate is for HTML/CSS, Javascript, and JQuery projects. It has been setup with a live server so that you can see live changes with every save.
