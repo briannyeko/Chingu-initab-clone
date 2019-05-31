@@ -1,11 +1,29 @@
+* {
+	box-sizing: border-box;
 
+}
 
-body {
-  font-family: 'Roboto Mono', sans-serif;
+.Navigation, .initabTitle, .NewsFeed, .JSdayfeed, .github-header, #tabs,
+.github-issue, .github-pull-requests {
+		font-family: 'Roboto Mono', sans-serif;
+}
 
-  background-color: #282a36;
-  height: 100%;
-  overflow: hidden;
+h1 {
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: 100;
+
+}
+
+.SocialMedia {
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: -1px;
 }
 
 ::-webkit-scrollbar {
@@ -21,190 +39,193 @@ body {
 }
 
 .grid-container > div {
-	padding: 15px;
+	padding: 5px;
 }
 
 
-p .SETTING, .GISTS, .STCKOVERFLOW, .TRENDING,
-.SCRATCHPAD, .PLAYGROUND, .HELPINFO {
-display: block;
-margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
+/*Navigation*/
 
-.column {
-  float: left;
-  width: 25%;
+
+.Navigation {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 6;
+	background-color: #44475a!important;
 }
 
-.reddit {
 
-}
-
-}
-/*Navbar*/
-.sidebar {
-  grid-column-start: 1;
-  	grid-column-end: 2;
-  	grid-row-start: 1;
-  	grid-row-end: 6;
-        flex-direction: column;
-  	background-color: #44475a!important;
-  }
-
-
-
-#Navigation button {
-  border: none;
-
-}
-
-#Navigation  i {
-  border-radius: 50%;
-  color: white;
-  display: flex;
-   width: 25px;
-   height: 25px;
-   justify-content: center;
-   align-items: center;
-
+.settings-header, .gists-header, .stack-overflow-header, .trending-header, .scratch-pad-header,
+.playground-header, .helpIntro-header {
+	font-size: 0.75em;
+	letter-spacing: -1px;
 }
 
 
 
+.Navigation i {
+	color: #44475a;
+}
 
-/*Navigation Bar*/
+.Navigation div {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	justify-content: space-between;
+}
 
-#Navigation
-{
-  display: flex;
+.Navigation div:hover {
+	cursor: pointer;
+}
 
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 50%;
-      font-size: 75%;
-      padding-top: 30px;
+.Navigation > div > * {
 
-  }
+	display: inline;
+}
 
-#Navigation button {
-  border: none;
-  font-weight: 900;
-    border-radius: 5px;
-    color: black;
-    margin-right: 5px;
+.fa-wrench {
+	background-color: #8be9fd!important;
+	height: 20px;
+	width: 20px;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.settings-header {
+	color: #8be9fd!important;
+}
+
+.fa-code {
+	background-color: #50fa7b!important;
+	height: 20px;
+	width: 15px;
+	padding: 3px 1px 3px 1px;
+	border-radius: 3px;
+}
+
+.gists-header {
+	color: #50fa7b!important;
+
+}
+
+.fa-stack-overflow {
+	background-color: #ffb86c!important;
+	height: 20px;
+	width: 20px;
+	padding: 3px 5px 4px 5px;
+	border-radius: 3px;
+}
+
+.stack-overflow-header {
+	color: #ffb86c!important;
+}
+
+.fa-chart-line {
+	background-color: #ff79c6!important;
+	height: 20px;
+	width: 20px;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.trending-header {
+	color: #ff79c6!important;
+
 }
 
 .fa-pencil-alt {
-  color: black;
+	background-color: #bd93f9!important;
+	height: 20px;
+	width: 20px;
+	padding: 3px;
+	border-radius: 3px;
 }
 
-#Navigation a {
-      flex-direction: column;
-      margin-right: 5px;
-}
-
-#SETTINGS {
-  background-color: #8be9fd;
-  border-radius: 3px;
-
+.scratch-pad-header {
+	color: #bd93f9!important;
 
 }
 
-.SETTINGS a {
-
-  color:#8be9fd;
+.fa-lightbulb {
+	background-color: #f8f8f2!important;
+	height: 20px;
+	width: 20px;
+	padding: 3px 5px 3px 5px;
+	border-radius: 3px;
 }
 
- #GISTS {
-  background-color: #50fa7b;
-color:#50fa7b;
-}
-
-.GISTS a {
-  color:#50fa7b;
-}
- #STCKOVERFLOW {
-  background-color: #ffb86c;
-color:#ffb86c;
-}
-
-.STCKOVERFLOW a {
-color:#ffb86c;
+.playground-header {
+	color: #f8f8f2!important;
 
 }
 
- #TRENDING {
-  background-color: #ff79c6;
-color:#ff79c6;
+.fa-lock {
+	color: #f8f8f2!important;
 }
 
-.TRENDING a {
-
-  color:#ff79c6;
+.fa-question {
+	background-color: #e6db74!important;
+	height: 20px;
+	width: 20px;
+	padding: 3px 5px 3px 5px;
+	border-radius: 3px;
 }
 
- #SCRATCHPAD {
-  background-color: #bd93f9;
-  color:#bd93f9;
-  mar
-}
-
-.SCRATCHPAD a {
-color:#bd93f9;
-}
-
- #PLAYGROUND {
-  background-color: #f8f8f2;
-  color:#f8f8f2;
-}
-
-.PLAYGROUND a {
-  color:#f8f8f2;
+.helpIntro-header {
+	color: #e6db74;
 
 }
 
- #HELPINFO {
-  background-color: #f1fa8c;
-  color: #f1fa8c;
+/*LOGO AND SOCIAL MEDIA*/
+
+.initab {
+	position: absolute;
+	bottom: 5%;
+	display: inline-block;
+	float: inherit;
+	z-index: 1;
 }
 
-.HELPINFO a {
-color: #f1fa8c;
-
+.initab-logo {
+	width: 100px;
+	height: 50px;
+	margin-left: 15px;
+	margin-bottom: 5px;
 }
 
-/*logo and SocialMedia*/
-
-#SocMediaLogo
-
-{
-  justify-content: flex-end;
-    height: -10px;
-    padding-top: 200px;
-    display: flex;
-    flex-direction: column;
-
+.initab-logo:hover path{
+	fill: #e6db74;
 }
 
-#Socialmedia {
-    display: flex;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    justify-content: space-between;
+.SocialMedia {
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
 }
 
-#Socialmedia i {
-border-radius: 50%;
-background-color: white;
-display: flex;
-width: 25px;
-height: 25px;
-justify-content: center;
-align-items: center;
 
+.fa-gitlab {
+	width: 25px;
+	height: 25px;
+	padding: 6px;
+	background-color: rgb(0,119,181);
+	color: rgb(255, 255, 255)!important;
+	border-radius: 50%;
 }
+
+
+.SocialMedia .fa-github-alt {
+	width: 25px;
+	height: 25px;
+	padding: 6px;
+	background-color: #4078c0;
+	color: rgb(255, 255, 255)!important;
+	border-radius: 50%;
+}
+
+.logo {
+	float: none;
+}
+
 
 /* Popular on R/JAVASCRIPT, Relvant JS history and Github issues history Tittle */
 .initabTitle {
@@ -239,6 +260,7 @@ margin: 5px;
 	overflow: auto;
 	max-height: 100vh;
 	display: block;
+  margin-left: 20px;
 }
 
 
@@ -419,6 +441,7 @@ color:  #f1fa8c;
   justify-content: center;
   word-spacing: -5px;
   transform: translateY(-10%);
+	margin-top: 35px;
 }
 #issues, #pullrequests {
   font-size: 0.8em;
